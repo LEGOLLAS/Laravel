@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('posts', function(){
     return 'test message';
 });
+
+Route::get('post/{postId}', function ($postId){
+    return 'post ID'. $postId;
+});
